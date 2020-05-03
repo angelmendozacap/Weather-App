@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+
+  <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="city-info">
+        <p class="city-info__location">
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12.2046 12.0931C11.1046 12.0931 10.2046 11.1931 10.2046 10.0931C10.2046 8.99309 11.1046 8.09309 12.2046 8.09309C13.3046 8.09309 14.2046 8.99309 14.2046 10.0931C14.2046 11.1931 13.3046 12.0931 12.2046 12.0931ZM18.2046 10.2931C18.2046 6.66309 15.5546 4.09309 12.2046 4.09309C8.85459 4.09309 6.20459 6.66309 6.20459 10.2931C6.20459 12.6331 8.15459 15.7331 12.2046 19.4331C16.2546 15.7331 18.2046 12.6331 18.2046 10.2931ZM12.2046 2.09309C16.4046 2.09309 20.2046 5.31309 20.2046 10.2931C20.2046 13.6131 17.5346 17.5431 12.2046 22.0931C6.87459 17.5431 4.20459 13.6131 4.20459 10.2931C4.20459 5.31309 8.00459 2.09309 12.2046 2.09309Z"
+              fill="white" />
+          </svg>
+
+          <span>Callao, PE</span>
+        </p>
+        <p class="city-info__date">
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M8.37848 4.73666L8.37848 2.4212H6.37848L6.37848 4.73666H5.86425C4.64922 4.73666 3.66425 5.72164 3.66425 6.93666V19.565C3.66425 20.78 4.64922 21.765 5.86425 21.765H18.5449C19.76 21.765 20.7449 20.78 20.7449 19.565V6.93666C20.7449 5.72163 19.76 4.73666 18.5449 4.73666H18.0307L18.0307 2.4212H16.0307L16.0307 4.73666H8.37848ZM5.86425 6.73666C5.75379 6.73666 5.66425 6.82621 5.66425 6.93666V9.13026H18.7449V6.93666C18.7449 6.82621 18.6554 6.73666 18.5449 6.73666H5.86425ZM5.66425 19.565V11.1303H18.7449V19.565C18.7449 19.6754 18.6554 19.765 18.5449 19.765H5.86425C5.75379 19.765 5.66425 19.6754 5.66425 19.565Z"
+              fill="white" />
+          </svg>
+
+          <span>Thu, 30</span>
+        </p>
+      </div>
+
+      <button class="profile">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM12 22.9091C18.0249 22.9091 22.9091 18.0249 22.9091 12C22.9091 5.97508 18.0249 1.09091 12 1.09091C5.97508 1.09091 1.09091 5.97508 1.09091 12C1.09091 18.0249 5.97508 22.9091 12 22.9091Z"
+            fill="white" />
+          <path
+            d="M12.0002 7.63636C12.8003 7.63636 13.4548 8.29091 13.4548 9.09091C13.4548 9.89091 12.8003 10.5455 12.0002 10.5455C11.2002 10.5455 10.5457 9.89091 10.5457 9.09091C10.5457 8.29091 11.2002 7.63636 12.0002 7.63636ZM12.0002 14.9091C13.9639 14.9091 16.2184 15.8473 16.3639 16.3636H7.63661C7.80389 15.84 10.0439 14.9091 12.0002 14.9091ZM12.0002 6.18182C10.393 6.18182 9.09116 7.48363 9.09116 9.09091C9.09116 10.6982 10.393 12 12.0002 12C13.6075 12 14.9093 10.6982 14.9093 9.09091C14.9093 7.48363 13.6075 6.18182 12.0002 6.18182ZM12.0002 13.4545C10.0584 13.4545 6.18207 14.4291 6.18207 16.3636V17.8182H17.8184V16.3636C17.8184 14.4291 13.9421 13.4545 12.0002 13.4545Z"
+            fill="white" />
+        </svg>
+      </button>
+    </header>
+
+    <main>
+      <section class="weather">
+        <h2 class="section-title section-title--h1">Good day user!</h2>
+        <img class="weather__icon" src="./img/11d.svg" alt="11d">
+        <h1 class="weather__temp">21°C</h1>
+        <p class="weather__detail">Clouds 21°C/24°C</p>
+      </section>
+
+      <section class="forecast">
+        <h2 class="forecast__title section-title section-title--h2">Forecast the next 7 days</h2>
+        <div class="forecast__grid carousel-grid">
+          <article class="forecast__card">
+            <span class="forecast__day">Fri</span>
+            <img class="forecast__icon" src="./img/02d.svg" alt="02d">
+            <p class="forecast__temp">19°C</p>
+          </article>
+
+          <article class="forecast__card">
+            <span class="forecast__day">Fri</span>
+            <img class="forecast__icon" src="./img/02d.svg" alt="02d">
+            <p class="forecast__temp">19°C</p>
+          </article>
+
+          <article class="forecast__card">
+            <span class="forecast__day">Fri</span>
+            <img class="forecast__icon" src="./img/02d.svg" alt="02d">
+            <p class="forecast__temp">19°C</p>
+          </article>
+
+          <article class="forecast__card">
+            <span class="forecast__day">Fri</span>
+            <img class="forecast__icon" src="./img/02d.svg" alt="02d">
+            <p class="forecast__temp">19°C</p>
+          </article>
+
+          <article class="forecast__card">
+            <span class="forecast__day">Fri</span>
+            <img class="forecast__icon" src="./img/02d.svg" alt="02d">
+            <p class="forecast__temp">19°C</p>
+          </article>
+
+          <article class="forecast__card">
+            <span class="forecast__day">Fri</span>
+            <img class="forecast__icon" src="./img/02d.svg" alt="02d">
+            <p class="forecast__temp">19°C</p>
+          </article>
+
+          <article class="forecast__card">
+            <span class="forecast__day">Fri</span>
+            <img class="forecast__icon" src="./img/02d.svg" alt="02d">
+            <p class="forecast__temp">19°C</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>

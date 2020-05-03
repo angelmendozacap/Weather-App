@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --fw-semibold: 600;
+  --fw-light: 300;
+  --body-font: "Montserrat", sans-serif;
+  --fs-h1: 2rem;
+  --fs-h2: 1.5rem;
+  --fs-normal: 1rem;
+  --fs-smaller: 0.75rem;
+  --body-bg: linear-gradient(360deg, #C75C2E 0%, #715C77 51.04%, #292A4E 100%);
+  --clr-light: #fff;
+  --clr-dark: #000;
+}
+
+.city-info__location, .city-info__date {
+  display: flex;
+  align-items: center;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-image: var(--body-bg);
+  color: var(--clr-light);
+  font-family: var(--body-font);
+}
+
+.container {
+  padding: 2rem 1rem;
+}
+
+.section-title {
+  font-weight: var(--fw-light);
+}
+.section-title--h1 {
+  font-size: var(--fs-h1);
+}
+.section-title--h2 {
+  font-size: var(--fs-h2);
+}
+.section-title--normal {
+  font-size: var(--fs-normal);
+}
+.section-title--smaller {
+  font-size: var(--fs-smaller);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.city-info {
+  display: grid;
+  row-gap: 0.5rem;
+}
+.city-info__location, .city-info__date {
+  opacity: 0.6;
+}
+.city-info__location svg, .city-info__date svg {
+  --size: 1rem;
+  width: var(--size);
+  height: var(--size);
+}
+.city-info__location span, .city-info__date span {
+  margin-left: 0.25rem;
+  font-size: var(--fs-smaller);
+  font-weight: var(--fw-semibold);
+}
+
+.profile {
+  border: none;
+  background: none;
+  opacity: 0.6;
+  cursor: pointer;
+}
+.profile:focus {
+  outline: none;
+}
+.profile svg {
+  --size: 2.5rem;
+  width: var(--size);
+  height: var(--size);
+}
+
+.weather {
+  text-align: center;
+  margin: 4rem 0;
+}
+.weather__icon {
+  --size: 12.5rem;
+  width: var(--size);
+  height: var(--size);
+  margin: 1rem 0 0.25rem;
+}
+.weather__temp {
+  --fs: 6.5rem;
+  font-size: var(--fs);
+  font-weight: var(--fw-light);
+}
+.weather__detail {
+  opacity: 0.6;
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-normal);
+}
+
+.forecast__title {
+  margin-bottom: 1rem;
+}
+.forecast__grid {
+  overflow-x: scroll;
+}
+.forecast__card {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: var(--clr-dark);
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  display: grid;
+  row-gap: 0.25rem;
+  justify-items: center;
+}
+.forecast__day {
+  font-weight: var(--fw-semibold);
+}
+.forecast__icon {
+  --size: 2.5rem;
+  width: var(--size);
+  height: var(--size);
+}
+.forecast__temp {
+  font-size: var(--fs-h2);
+}
+
+/*# sourceMappingURL=main.css.map */
